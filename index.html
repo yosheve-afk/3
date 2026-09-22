@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Nadia Hartley, CPA, ACCA | Accountant and Financial Advisor</title>
+  <meta name="description" content="Nadia Hartley is a CPA and ACCA-qualified accountant offering tax planning, auditing, bookkeeping, and financial advisory for founders and growing businesses.">
+  <meta name="theme-color" content="#0F1F3D">
+
+  <!-- Social preview: replace the image with your own (1200 x 630) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nadia Hartley, CPA, ACCA | Accountant and Financial Advisor">
+  <meta property="og:description" content="Precision in every number. Growth in every strategy.">
+  <meta property="og:image" content="./assets/og-image.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1F3D'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' font-weight='700' text-anchor='middle' fill='%23C9A45C'%3ENH%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+  <!-- Marks that JS is available so reveal animations only hide content when they can also show it -->
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- ============ SVG icon sprite (referenced with <use>) ============ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></symbol>
+    <symbol id="i-filetext" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-pie" viewBox="0 0 24 24"><path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"/><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== 1. NAVBAR ===================== -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="#home" class="brand" aria-label="Nadia Hartley, back to top">
+        <span class="brand-mark" aria-hidden="true">NH</span>
+        <span class="brand-text">
+          <span class="brand-name">Nadia Hartley</span>
+          <span class="brand-role">CPA, ACCA</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-sm">Hire me</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+    <!-- ===================== 2. HERO ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            <span>Precision in every number.</span>
+            <span>Growth in every strategy.</span>
+          </h1>
+          <p class="hero-lead">
+            I'm an independent CPA and ACCA-qualified accountant helping founders, freelancers, and growing businesses keep clean books, file with confidence, and make decisions backed by numbers they can trust.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book a free consultation</a>
+            <a href="#services" class="btn btn-ghost">View services</a>
+          </div>
+
+          <ul class="hero-assurances" aria-label="At a glance">
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Licensed CPA</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>ACCA member</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Free 30-minute first call</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="portrait">
+            <div class="portrait-frame">
+              <!-- Shown only if ./assets/profile.jpg is missing -->
+              <svg class="portrait-fallback" viewBox="0 0 200 250" aria-hidden="true" focusable="false">
+                <circle cx="100" cy="92" r="42" fill="currentColor"/>
+                <path d="M20 250c0-56 36-86 80-86s80 30 80 86z" fill="currentColor"/>
+              </svg>
+              <img src="./assets/profile.jpg" alt="Portrait of Nadia Hartley, CPA" width="640" height="800" fetchpriority="high">
+            </div>
+          </figure>
+
+          <!-- Illustrative trial balance: the one animated moment on load -->
+          <aside class="ledger" id="ledger" aria-label="Illustration of a balanced trial balance">
+            <div class="ledger-head">
+              <span class="ledger-title">Trial balance</span>
+              <span class="ledger-status is-balanced" id="ledger-status">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>
+                <span class="ledger-status-text">Balanced</span>
+              </span>
+            </div>
+            <table>
+              <thead>
+                <tr><th scope="col">Account</th><th scope="col">Debit</th><th scope="col">Credit</th></tr>
+              </thead>
+              <tbody>
+                <tr class="ledger-row"><td>Cash</td><td class="num">48,200</td><td class="num"></td></tr>
+                <tr class="ledger-row"><td>Receivables</td><td class="num">31,650</td><td class="num"></td></tr>
+                <tr class="ledger-row"><td>Equipment</td><td class="num">20,150</td><td class="num"></td></tr>
+                <tr class="ledger-row"><td>Payables</td><td class="num"></td><td class="num">27,400</td></tr>
+                <tr class="ledger-row"><td>Bank loan</td><td class="num"></td><td class="num">32,600</td></tr>
+                <tr class="ledger-row"><td>Owner's equity</td><td class="num"></td><td class="num">40,000</td></tr>
+              </tbody>
+              <tfoot>
+                <tr class="ledger-row">
+                  <th scope="row">Total</th>
+                  <td class="num"><span data-count="100000">100,000</span></td>
+                  <td class="num"><span data-count="100000">100,000</span></td>
+                </tr>
+              </tfoot>
+            </table>
+            <p class="ledger-note">Illustrative figures</p>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== 3. ABOUT & QUALIFICATIONS ===================== -->
+    <section class="section section--mist" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+
+        <div class="about-copy reveal">
+          <h2 id="about-title">I explain the numbers, not just report them.</h2>
+          <p>
+            I'm Nadia, a CPA and ACCA member with twelve years across audit, tax, and hands-on finance leadership. I work with founders, freelancers, and owner-run businesses who want accurate books and clear answers, without the jargon.
+          </p>
+          <p>
+            My approach is simple: keep the records clean every month, plan taxes before the deadline instead of after it, and turn the results into decisions you can act on. Clients stay because they always know where they stand.
+          </p>
+
+          <dl class="facts">
+            <div><dt>Years in practice</dt><dd>12+</dd></div>
+            <div><dt>Clients supported</dt><dd>240+</dd></div>
+            <div><dt>Filings submitted on time</dt><dd>100%</dd></div>
+          </dl>
+        </div>
+
+        <div class="credentials">
+          <h3 class="reveal">Qualifications and training</h3>
+          <ul class="badge-grid" data-stagger>
+            <li class="reveal">
+              <div class="badge">
+                <span class="badge-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg></span>
+                <span class="badge-text"><strong>CPA</strong><span>Certified Public Accountant</span></span>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="badge">
+                <span class="badge-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg></span>
+                <span class="badge-text"><strong>ACCA</strong><span>Chartered Certified Accountant</span></span>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="badge">
+                <span class="badge-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-calc"/></svg></span>
+                <span class="badge-text"><strong>CMA</strong><span>Certified Management Accountant</span></span>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="badge">
+                <span class="badge-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-filetext"/></svg></span>
+                <span class="badge-text"><strong>IFRS Diploma</strong><span>International reporting standards</span></span>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="badge">
+                <span class="badge-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-award"/></svg></span>
+                <span class="badge-text"><strong>Xero and QuickBooks</strong><span>Certified advisor</span></span>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="badge">
+                <span class="badge-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cap"/></svg></span>
+                <span class="badge-text"><strong>MSc</strong><span>Accounting and Finance</span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== 4. CORE SERVICES ===================== -->
+    <section class="section section--navy on-dark" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="services-title">Services built around how your business actually runs</h2>
+          <p>Choose one service or combine several. Open any card to see what's included.</p>
+        </div>
+
+        <ul class="svc-grid" data-stagger>
+
+          <li class="reveal">
+            <article class="svc-card">
+              <span class="svc-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-landmark"/></svg></span>
+              <h3>Tax planning</h3>
+              <p>Plan ahead instead of paying more than you owe, with year-round strategy for individuals and small businesses.</p>
+              <button class="svc-toggle" type="button" aria-expanded="false" aria-controls="svc-tax">
+                What's included
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg>
+              </button>
+              <div class="svc-more" id="svc-tax">
+                <div class="svc-more-inner">
+                  <ul class="svc-list">
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Personal and business return preparation</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Deduction and credit review</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Quarterly estimated payments</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Business structure review</li>
+                  </ul>
+                  <a class="svc-link" href="#contact" data-service="Tax planning">Ask about tax planning</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="reveal">
+            <article class="svc-card">
+              <span class="svc-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clipboard"/></svg></span>
+              <h3>Financial auditing</h3>
+              <p>An independent review of your accounts that catches errors early and gives lenders and investors confidence.</p>
+              <button class="svc-toggle" type="button" aria-expanded="false" aria-controls="svc-audit">
+                What's included
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg>
+              </button>
+              <div class="svc-more" id="svc-audit">
+                <div class="svc-more-inner">
+                  <ul class="svc-list">
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Internal control assessments</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Year-end audit preparation</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Reconciliation review</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Fraud-risk checks</li>
+                  </ul>
+                  <a class="svc-link" href="#contact" data-service="Financial auditing">Ask about auditing</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="reveal">
+            <article class="svc-card">
+              <span class="svc-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-book"/></svg></span>
+              <h3>Bookkeeping</h3>
+              <p>Clean, current books every month, so you always know where your money is going.</p>
+              <button class="svc-toggle" type="button" aria-expanded="false" aria-controls="svc-books">
+                What's included
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg>
+              </button>
+              <div class="svc-more" id="svc-books">
+                <div class="svc-more-inner">
+                  <ul class="svc-list">
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Monthly bank reconciliations</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Accounts payable and receivable</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Xero or QuickBooks setup</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Catch-up and cleanup projects</li>
+                  </ul>
+                  <a class="svc-link" href="#contact" data-service="Bookkeeping">Ask about bookkeeping</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="reveal">
+            <article class="svc-card">
+              <span class="svc-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trend"/></svg></span>
+              <h3>Advisory</h3>
+              <p>Practical guidance on pricing, cash flow, and growth, based on your real numbers rather than rules of thumb.</p>
+              <button class="svc-toggle" type="button" aria-expanded="false" aria-controls="svc-advisory">
+                What's included
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg>
+              </button>
+              <div class="svc-more" id="svc-advisory">
+                <div class="svc-more-inner">
+                  <ul class="svc-list">
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Cash-flow forecasting</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Budgets and KPI dashboards</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Lender-ready funding packs</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Part-time CFO support</li>
+                  </ul>
+                  <a class="svc-link" href="#contact" data-service="Advisory">Ask about advisory</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="reveal">
+            <article class="svc-card">
+              <span class="svc-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg></span>
+              <h3>Payroll and compliance</h3>
+              <p>Payroll runs and government filings handled on schedule, so deadlines never turn into penalties.</p>
+              <button class="svc-toggle" type="button" aria-expanded="false" aria-controls="svc-payroll">
+                What's included
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg>
+              </button>
+              <div class="svc-more" id="svc-payroll">
+                <div class="svc-more-inner">
+                  <ul class="svc-list">
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Payroll processing and payslips</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Payroll tax filings</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Sales tax and VAT returns</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>A shared deadline calendar</li>
+                  </ul>
+                  <a class="svc-link" href="#contact" data-service="Payroll and compliance">Ask about payroll</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="reveal">
+            <article class="svc-card">
+              <span class="svc-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pie"/></svg></span>
+              <h3>Financial reporting</h3>
+              <p>Monthly and annual statements you can actually read, with plain-language notes on what changed and why.</p>
+              <button class="svc-toggle" type="button" aria-expanded="false" aria-controls="svc-reporting">
+                What's included
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg>
+              </button>
+              <div class="svc-more" id="svc-reporting">
+                <div class="svc-more-inner">
+                  <ul class="svc-list">
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Profit and loss, balance sheet, cash flow</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>IFRS and GAAP-compliant statements</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Board and investor reports</li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Variance commentary</li>
+                  </ul>
+                  <a class="svc-link" href="#contact" data-service="Financial reporting">Ask about reporting</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 5. EXPERIENCE / TIMELINE ===================== -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="experience-title">Twelve years of steady, measurable results</h2>
+          <p>From audit rooms to founder-level advisory, each role added a skill I now use for clients.</p>
+        </div>
+
+        <ol class="timeline">
+
+          <li class="tl-item tl-item--current reveal">
+            <div class="tl-card">
+              <span class="tl-date">2022 to present</span>
+              <h3>Senior Accountant and Finance Lead</h3>
+              <p class="tl-org">Northgate Partners LLP</p>
+              <ul class="tl-points">
+                <li>Lead a team of four running month-end close for 35 clients.</li>
+                <li>Cut average close time from nine working days to five by automating reconciliations.</li>
+                <li>Advise founders on cash-flow forecasting and funding readiness.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item reveal">
+            <div class="tl-card">
+              <span class="tl-date">2019 to 2022</span>
+              <h3>Audit Senior</h3>
+              <p class="tl-org">Whitcombe and Ross LLP</p>
+              <ul class="tl-points">
+                <li>Led audits for companies with revenue between $5M and $80M.</li>
+                <li>Flagged control gaps that saved clients an estimated $1.2M.</li>
+                <li>Mentored eight junior auditors through their first busy season.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item reveal">
+            <div class="tl-card">
+              <span class="tl-date">2016 to 2019</span>
+              <h3>Tax Associate</h3>
+              <p class="tl-org">Alder Street Advisory</p>
+              <ul class="tl-points">
+                <li>Prepared more than 400 individual and small-business returns each season.</li>
+                <li>Built a deduction checklist that the whole firm adopted.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item reveal">
+            <div class="tl-card">
+              <span class="tl-date">2014 to 2016</span>
+              <h3>Staff Accountant</h3>
+              <p class="tl-org">Brightwell Manufacturing</p>
+              <ul class="tl-points">
+                <li>Managed payables, receivables, and month-end reporting.</li>
+                <li>Supported the move from spreadsheets to cloud accounting.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item reveal">
+            <div class="tl-card">
+              <span class="tl-date">2010 to 2014</span>
+              <h3>BSc Accounting and Finance</h3>
+              <p class="tl-org">University of Eastfield</p>
+              <ul class="tl-points">
+                <li>Graduated with first-class honours.</li>
+                <li>Completed a placement year in a regional audit practice.</li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== 6. CONTACT ===================== -->
+    <section class="section section--mist" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+
+        <div class="contact-copy reveal">
+          <h2 id="contact-title">Let's look at your numbers together</h2>
+          <p>Tell me what you need and I'll reply within one business day. The first 30-minute consultation is free.</p>
+
+          <ul class="contact-details">
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>
+              <span><strong>Email</strong><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>
+              <span><strong>Location</strong>Remote-first, serving clients worldwide</span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>
+              <span><strong>Availability</strong>Taking on new clients</span>
+            </li>
+          </ul>
+
+          <div class="socials">
+            <a class="social" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg>LinkedIn
+            </a>
+            <a class="social" href="mailto:hello@yourdomain.com">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>Email me
+            </a>
+          </div>
+        </div>
+
+        <div class="form-card reveal">
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="f-name">Your name</label>
+                <input type="text" id="f-name" name="name" autocomplete="name" required aria-describedby="f-name-error">
+                <p class="field-error" id="f-name-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="f-email">Email address</label>
+                <input type="email" id="f-email" name="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-error">
+                <p class="field-error" id="f-email-error" hidden></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="f-service">What do you need help with?</label>
+                <select id="f-service" name="service" required aria-describedby="f-service-error">
+                  <option value="">Choose a service</option>
+                  <option>Tax planning</option>
+                  <option>Financial auditing</option>
+                  <option>Bookkeeping</option>
+                  <option>Advisory</option>
+                  <option>Payroll and compliance</option>
+                  <option>Financial reporting</option>
+                  <option>Something else</option>
+                </select>
+                <p class="field-error" id="f-service-error" hidden></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="f-message">Message</label>
+                <textarea id="f-message" name="message" rows="5" required aria-describedby="f-message-error"></textarea>
+                <p class="field-error" id="f-message-error" hidden></p>
+              </div>
+
+              <!-- Spam trap: real visitors never see or fill this -->
+              <div class="hp" aria-hidden="true">
+                <label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+              </div>
+            </div>
+
+            <p class="form-banner" id="form-banner" role="alert" hidden>
+              Your message didn't send. Check your connection and try again, or email hello@yourdomain.com.
+            </p>
+
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary" id="submit-btn">
+                <span class="btn-label">Send message</span>
+              </button>
+              <p class="form-note">Your details are only used to reply to this message.</p>
+            </div>
+          </form>
+
+          <div class="form-success" id="form-success" hidden>
+            <span class="success-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></span>
+            <h3 id="form-success-title" tabindex="-1">Message sent</h3>
+            <p>Thanks for reaching out. I'll reply within one business day.</p>
+            <button type="button" class="btn btn-ghost btn-sm" id="form-reset">Send another message</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Nadia Hartley. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="mailto:hello@yourdomain.com">Email</a></li>
+        <li><a href="#home">Back to top</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
